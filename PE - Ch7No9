@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int j, input, notaprime;
+
+    scanf("%d", &input);
+
+    printf("List of prime numbers:\n");
+    for(; input >= 2; input--)
+    {
+        notaprime = 0;
+        for(j = 2; j < input; j++) //OR (for(j = 2; j*j <= input; j++)
+        {
+            if((input % j) == 0)
+            {
+                notaprime = 1;
+                break;
+            }
+            else
+            {
+                ;
+            }
+        }
+
+        if(notaprime)
+        {
+            ;
+        }
+        else
+        {
+            printf("%d\n", input);
+        }
+    }
+
+    return 0;
+}
